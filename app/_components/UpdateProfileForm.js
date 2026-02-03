@@ -2,6 +2,7 @@
 
 import { useFormStatus } from "react-dom";
 import { updateGuest } from "../_lib/actions";
+import Image from "next/image";
 
 function UpdateProfileForm({ guest, children }) {
   const { fullName, email, nationality, nationaID, countryFlag } = guest;
@@ -33,9 +34,10 @@ function UpdateProfileForm({ guest, children }) {
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <label htmlFor="nationality">Where are you from?</label>
-          <img
+          <Image
             src={countryFlag}
             alt="Country flag"
+            fill
             className="h-5 rounded-sm"
           />
         </div>
