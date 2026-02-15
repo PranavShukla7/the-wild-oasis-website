@@ -37,8 +37,9 @@ function UpdateProfileForm({ guest, children }) {
           <Image
             src={countryFlag}
             alt="Country flag"
-            fill
-            className="h-5 rounded-sm"
+            width={50}
+            height={20}
+            className="rounded-sm"
           />
         </div>
 
